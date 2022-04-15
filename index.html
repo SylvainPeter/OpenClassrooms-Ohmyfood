@@ -14,33 +14,40 @@
 <body>
 
     <header>
-        <h1><img src="images/logo/ohmyfood.png" alt="ohmyfood"></h1>
+        <a href="index.html">
+            <h1><img src="images/logo/ohmyfood.png" alt="ohmyfood"></h1>
+        </a>
     </header>
 
     <main>
-        <section id="reservations">
-            <p><i class="fas fa-heart"></i>Paris, Belleville</p>
+        <section id="reservations_section">
+            <p>
+                <i class="fas fa-map-marker-alt"></i>
+                <input type="search" name="city" value="Paris, Belleville" placeholder="Entrez le nom de la ville">
+            </p>
             <h2>Réservez le menu qui vous convient</h2>
             <p>Découvrez des restaurants d'exception, sélectionnés par nos soins.</p>
             <button>Explorer nos restaurants</button>
         </section>
 
-        <section id="working">
+        <section id="working_section">
             <h2>Fonctionnement</h2>
-            <div class="working_option">
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <span>Choisissez un restaurant</span>
+            <div class="working_item">
+                <div class="working_item--number">1</div>
+                <div><i class="fas fa-mobile-alt working_item--icon"></i></div>
+                <p>Choisissez un restaurant</p>
             </div>
-            <div class="working_option">
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <span>Composez votre menu</span>
+            <div class="working_item">
+                <div class="working_item--number">2</div>
+                <div><i class="fas fa-list-ul working_item--icon"></i></div>
+                <p>Composez votre menu</p>
             </div>
-            <div class="working_option">
-                <i class="fas fa-heart"></i>
-                <i class="fas fa-heart"></i>
-                <span>Déhustez au restaurant</span>
+                <div class="working_item">
+                <div class="working_item--number">3</div>
+                <div><i class="fas fa-store working_item--icon"></i></div>
+                <p>Dégustez au restaurant</p>
+            </div>
+
             </div>
         </section>
 
@@ -51,26 +58,26 @@
                 <img src="" alt="La palette du goût">
                 <span>Nouveau</span>
                 <h3>La palette du goût</h3>
-                <span>Ménilmontant</span><i class="fas fa-heart"></i>
+                <span>Ménilmontant</span><i class="far fa-heart"></i>
             </div>
 
             <div class="restaurants_card">
                 <img src="" alt="La note enchantée">
                 <span>Nouveau</span>
                 <h3>La note enchantée</h3>
-                <span>Charonne</span><i class="fas fa-heart"></i>
+                <span>Charonne</span><i class="far fa-heart"></i>
             </div>
 
             <div class="restaurants_card">
                 <img src="" alt="A la française">
                 <h3>A la française</h3>
-                <span>Cité Rouge</span><i class="fas fa-heart"></i>
+                <span>Cité Rouge</span><i class="far fa-heart"></i>
             </div>
 
             <div class="restaurants_card">
                 <img src="" alt="Le délice des sens">
                 <h3>Le délice des sens</h3>
-                <span>Folie-Méricourt</span><i class="fas fa-heart"></i>
+                <span>Folie-Méricourt</span><i class="far fa-heart"></i>
             </div>
 
         </section>
@@ -79,7 +86,7 @@
     <footer>
         <h2>ohmyfood</h2>
         <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
-        <p><i class="fas fa-heart"></i>Devenir partenaire</p>
+        <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
         <p>Mentions légales</p>
         <p>Contact</p>
     </footer>

@@ -1,10 +1,52 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;400&family=Shrikhand&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 body {
   font-family: "Roboto", sans-serif;
 }
 
+h1, h2, h3 {
+  font-weight: 900;
+}
+
 .fas {
   padding: 0 10px 0 0;
+}
+
+button {
+  display: inline-block;
+  padding: 16px;
+  font-size: large;
+  color: white;
+  border: 1px solid transparent;
+  border-radius: 45px;
+  background-image: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
+  box-shadow: 1px 8px 9px lightgrey;
+}
+
+#working_section {
+  padding: 20px;
+}
+#working_section .working_item {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  padding: 5px;
+  margin: 15px 20px 15px 30px;
+  border-radius: 20px;
+  box-shadow: 2px 7px 21px -3px #c4c4c4;
+}
+#working_section .working_item--number {
+  background-color: #9356dc;
+  color: white;
+  border-radius: 50%;
+  padding: 5px 9px;
+  margin-left: -40px;
+}
+#working_section .working_item--icon {
+  color: grey;
+  font-size: 1.2rem;
+  margin-left: 20px;
 }
 
 header {
@@ -16,24 +58,8 @@ header h1 > img {
   padding: 10px;
 }
 
-#reservations button {
-  display: inline-block;
-  color: white;
-  padding: 16px;
-  border: 1px solid white;
-  border-radius: 45px;
-  background-image: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-}
-
-#reservations {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-}
-
 footer {
-  background-color: #403f3e;
+  background-color: #353535;
   color: white;
   padding: 20px;
 }
@@ -41,6 +67,43 @@ footer h2 {
   font-family: "Shrikhand", cursive;
   letter-spacing: 1px;
   font-size: 18px;
+}
+
+#reservations_section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 60px;
+}
+#reservations_section p:nth-child(1) {
+  width: 100%;
+  padding: 5px 0 15px 0;
+  margin-top: 0px;
+  background-color: #eaeaea;
+  box-shadow: inset 0px 5px 5px 0px #dddddd;
+}
+#reservations_section input {
+  width: 150px;
+  padding: 10px 5px 5px 5px;
+  margin-top: 5px;
+  text-align: center;
+  border: none;
+  background: #eaeaea;
+}
+#reservations_section h2 {
+  padding: 0 20px 0 20px;
+}
+#reservations_section p:nth-child(3) {
+  padding: 0 20px 35px 20px;
+  font-size: 20px;
+}
+
+#working {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
 /*# sourceMappingURL=main.css.map */
