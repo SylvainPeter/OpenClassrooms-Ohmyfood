@@ -1,12 +1,13 @@
 footer {
-
-    background-color: $grey;
-    color: white;
     padding: 20px;
+    line-height: 16px;
+    background-color: $background-color2;
+    color: white;
 
     h2 {
         font-family: 'Shrikhand', cursive;
-        letter-spacing: 1px;
         font-size: 18px;
+        letter-spacing: 1px;
+        padding-bottom: 15px;
     }
 }

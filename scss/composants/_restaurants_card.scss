@@ -1,0 +1,13 @@
+.restaurants_card {
+    border: 1px solid blue;
+    margin-bottom: 20px;
+    cursor: pointer;
+
+    img {
+        max-width: 100%;
+    }
+
+    i:hover {
+        color: $secondary-color;
+    }
+}

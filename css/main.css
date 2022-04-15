@@ -7,6 +7,11 @@ h1, h2, h3 {
   font-weight: 900;
 }
 
+a {
+  text-decoration: none;
+  color: black;
+}
+
 .fas {
   padding: 0 10px 0 0;
 }
@@ -14,6 +19,7 @@ h1, h2, h3 {
 button {
   display: inline-block;
   padding: 16px;
+  margin-bottom: 60px;
   font-size: large;
   color: white;
   border: 1px solid transparent;
@@ -22,31 +28,41 @@ button {
   box-shadow: 1px 8px 9px lightgrey;
 }
 
-#working_section {
-  padding: 20px;
-}
-#working_section .working_item {
+.working_item {
   display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
   align-items: center;
-  flex-wrap: nowrap;
   padding: 5px;
-  margin: 15px 20px 15px 30px;
+  margin: 35px 5px -9px 10px;
   border-radius: 20px;
   box-shadow: 2px 7px 21px -3px #c4c4c4;
+  background-color: #f6f6f6;
 }
-#working_section .working_item--number {
-  background-color: #9356dc;
+.working_item .working_item--number {
+  background-color: #9356DC;
   color: white;
   border-radius: 50%;
   padding: 5px 9px;
-  margin-left: -40px;
+  margin-left: -15px;
 }
-#working_section .working_item--icon {
+.working_item .working_item--icon {
   color: grey;
   font-size: 1.2rem;
   margin-left: 20px;
+}
+.working_item p {
+  font-weight: 500;
+}
+
+.restaurants_card {
+  border: 1px solid blue;
+  margin-bottom: 20px;
+  cursor: pointer;
+}
+.restaurants_card img {
+  max-width: 100%;
+}
+.restaurants_card i:hover {
+  color: #FF79DA;
 }
 
 header {
@@ -56,17 +72,20 @@ header {
 header h1 > img {
   max-width: 182px;
   padding: 10px;
+  margin-bottom: 0;
 }
 
 footer {
+  padding: 20px;
+  line-height: 16px;
   background-color: #353535;
   color: white;
-  padding: 20px;
 }
 footer h2 {
   font-family: "Shrikhand", cursive;
-  letter-spacing: 1px;
   font-size: 18px;
+  letter-spacing: 1px;
+  padding-bottom: 15px;
 }
 
 #reservations_section {
@@ -75,14 +94,14 @@ footer h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  margin-bottom: 60px;
+  background-color: #f6f6f6;
 }
 #reservations_section p:nth-child(1) {
   width: 100%;
   padding: 5px 0 15px 0;
   margin-top: 0px;
   background-color: #eaeaea;
-  box-shadow: inset 0px 5px 5px 0px #dddddd;
+  box-shadow: inset 0px 5px 8px -2px #bfbfbf;
 }
 #reservations_section input {
   width: 150px;
@@ -94,16 +113,23 @@ footer h2 {
 }
 #reservations_section h2 {
   padding: 0 20px 0 20px;
+  margin-bottom: 0;
 }
 #reservations_section p:nth-child(3) {
-  padding: 0 20px 35px 20px;
+  padding: 0 20px 10px 20px;
   font-size: 20px;
+  font-weight: 300;
 }
 
-#working {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
+#working_section {
+  padding: 20px;
+  margin-bottom: 40px;
+}
+
+#restaurants_section {
+  padding: 20px;
+  margin-bottom: 20px;
+  background-color: #f6f6f6;
 }
 
 /*# sourceMappingURL=main.css.map */
