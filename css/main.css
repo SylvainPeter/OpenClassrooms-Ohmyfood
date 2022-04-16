@@ -35,7 +35,7 @@ button {
   margin: 35px 5px -9px 10px;
   border-radius: 20px;
   box-shadow: 2px 7px 21px -3px #c4c4c4;
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
 }
 .working_item .working_item--number {
   background-color: #9356DC;
@@ -94,7 +94,7 @@ footer h2 {
   align-items: center;
   justify-content: center;
   text-align: center;
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
 }
 #reservations_section p:nth-child(1) {
   width: 100%;
@@ -129,7 +129,7 @@ footer h2 {
 #restaurants_section {
   padding: 20px;
   margin-bottom: 20px;
-  background-color: #f6f6f6;
+  background-color: #f3f3f3;
 }
 
 /*# sourceMappingURL=main.css.map */

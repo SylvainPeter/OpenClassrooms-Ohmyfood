@@ -2,6 +2,6 @@ $primary-color: #9356DC;
 $secondary-color: #FF79DA;
 $tertiary-color: #99E2D0;
 $background-color1: #eaeaea;
-$background-color1--lighter: #f6f6f6;
+$background-lighter: lighten($background-color1, 3.4%);
 $background-color2: #353535;
 
