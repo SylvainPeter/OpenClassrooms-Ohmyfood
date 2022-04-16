@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&family=Shrikhand&display=swap");
 body {
-  font-family: "Roboto", sans-serif;
+  font-family: 'Roboto', sans-serif;
 }
 
 h1, h2, h3 {
@@ -25,18 +25,25 @@ button {
   border: 1px solid transparent;
   border-radius: 45px;
   background-image: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
-  box-shadow: 1px 8px 9px lightgrey;
+  -webkit-box-shadow: 1px 8px 9px lightgrey;
+          box-shadow: 1px 8px 9px lightgrey;
 }
 
 .working_item {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  align-items: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   padding: 5px;
   margin: 35px 5px -9px 10px;
   border-radius: 20px;
-  box-shadow: 2px 7px 21px -3px #c4c4c4;
+  -webkit-box-shadow: 2px 7px 21px -3px #c4c4c4;
+          box-shadow: 2px 7px 21px -3px #c4c4c4;
   background-color: #f3f3f3;
 }
+
 .working_item .working_item--number {
   background-color: #9356DC;
   color: white;
@@ -44,11 +51,13 @@ button {
   padding: 5px 9px;
   margin-left: -15px;
 }
+
 .working_item .working_item--icon {
   color: grey;
   font-size: 1.2rem;
   margin-left: 20px;
 }
+
 .working_item p {
   font-weight: 500;
 }
@@ -58,17 +67,24 @@ button {
   margin-bottom: 20px;
   cursor: pointer;
 }
+
 .restaurants_card img {
   max-width: 100%;
 }
+
 .restaurants_card i:hover {
   color: #FF79DA;
 }
 
 header {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
+
 header h1 > img {
   max-width: 182px;
   padding: 10px;
@@ -81,28 +97,41 @@ footer {
   background-color: #353535;
   color: white;
 }
+
 footer h2 {
-  font-family: "Shrikhand", cursive;
+  font-family: 'Shrikhand', cursive;
   font-size: 18px;
   letter-spacing: 1px;
   padding-bottom: 15px;
 }
 
 #reservations_section {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   text-align: center;
   background-color: #f3f3f3;
 }
+
 #reservations_section p:nth-child(1) {
   width: 100%;
   padding: 5px 0 15px 0;
   margin-top: 0px;
   background-color: #eaeaea;
-  box-shadow: inset 0px 5px 8px -2px #bfbfbf;
+  -webkit-box-shadow: inset 0px 5px 8px -2px #bfbfbf;
+          box-shadow: inset 0px 5px 8px -2px #bfbfbf;
 }
+
 #reservations_section input {
   width: 150px;
   padding: 10px 5px 5px 5px;
@@ -111,10 +140,12 @@ footer h2 {
   border: none;
   background: #eaeaea;
 }
+
 #reservations_section h2 {
   padding: 0 20px 0 20px;
   margin-bottom: 0;
 }
+
 #reservations_section p:nth-child(3) {
   padding: 0 20px 10px 20px;
   font-size: 20px;
@@ -131,5 +162,4 @@ footer h2 {
   margin-bottom: 20px;
   background-color: #f3f3f3;
 }
-
 /*# sourceMappingURL=main.css.map */
