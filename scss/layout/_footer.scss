@@ -1,6 +1,8 @@
 footer {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
     padding: 20px;
-    line-height: 16px;
     background-color: $background-color2;
     color: white;
 
@@ -8,6 +10,9 @@ footer {
         font-family: 'Shrikhand', cursive;
         font-size: 18px;
         letter-spacing: 1px;
-        padding-bottom: 15px;
+    }
+
+    a {
+        color: white;
     }
 }
