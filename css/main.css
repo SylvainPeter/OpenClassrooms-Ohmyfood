@@ -40,6 +40,7 @@ button:hover {
 }
 
 .working_item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -55,11 +56,12 @@ button:hover {
 }
 
 .working_item .working_item--number {
+  position: absolute;
   background-color: #9356DC;
   color: white;
   border-radius: 50%;
   padding: 5px 9px;
-  margin-left: -15px;
+  left: -15px;
 }
 
 .working_item .working_item--icon {
