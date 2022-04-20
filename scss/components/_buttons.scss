@@ -1,5 +1,5 @@
 button {
-    display: inline-block;
+    margin: auto;
     padding: 16px;
     font-size: large;
     color: white;
@@ -14,4 +14,9 @@ button {
 button:hover {
     background-image: linear-gradient(135deg, darken($secondary-color, 8) 0%, darken($primary-color, 8) 100%);
     transform: scale(1.05);
+}
+
+#order_button {
+    margin: 30px auto 50px auto;
+    padding: 16px 35px 16px 35px;
 }

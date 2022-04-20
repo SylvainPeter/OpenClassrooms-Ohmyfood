@@ -12,6 +12,10 @@ a {
   color: black;
 }
 
+.fas {
+  padding: 0 10px 0 0;
+}
+
 header {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -112,12 +116,8 @@ header .fas {
   background-color: #f3f3f3;
 }
 
-.fas {
-  padding: 0 10px 0 0;
-}
-
 button {
-  display: inline-block;
+  margin: auto;
   padding: 16px;
   font-size: large;
   color: white;
@@ -137,6 +137,11 @@ button:hover {
   background-image: linear-gradient(135deg, #ff50cf 0%, #7d34d5 100%);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+#order_button {
+  margin: 30px auto 50px auto;
+  padding: 16px 35px 16px 35px;
 }
 
 .working_item {
@@ -292,7 +297,7 @@ footer a {
 
 .menu_title h2 {
   font-family: 'Shrikhand', cursive;
-  font-size: 28px;
+  font-size: 24px;
 }
 
 .menu_title .fa-heart {
@@ -313,17 +318,24 @@ footer a {
   gap: 15px;
 }
 
-.starters h3,
-.main_dishes h3,
-.desserts h3 {
+.starters span,
+.main_dishes span,
+.desserts span {
   font-weight: 300;
-  font-size: 17px;
+  font-size: 16px;
+  border-bottom: 3px solid transparent;
+  padding: 5px 10px 5px 10px;
 }
 
-.starters h3:hover,
-.main_dishes h3:hover,
-.desserts h3:hover {
-  color: #9356DC;
+.starters span:hover,
+.main_dishes span:hover,
+.desserts span:hover {
+  border-bottom: 3px solid #99E2D0;
+}
+
+.main_dishes,
+.desserts {
+  margin-top: 20px;
 }
 
 .menu_footer {
@@ -339,7 +351,7 @@ footer a {
 
 .menu_item h4 {
   margin: 0;
-  font-size: 18px;
+  font-size: 17px;
 }
 
 .menu_item .menu_item--description {
@@ -357,6 +369,7 @@ footer a {
 
 .menu_item .menu_item--description p {
   margin: 5px 0 0 0;
+  font-size: 15px;
   font-weight: 300;
 }
 /*# sourceMappingURL=main.css.map */
