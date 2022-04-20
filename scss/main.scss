@@ -2,12 +2,16 @@
 
 @import "./base/typography";
 
-@import "./composants/icons";
-@import "./composants/buttons";
-@import "./composants/working-item";
-@import "./composants/restaurants_card";
-
 @import "./layout/header";
-@import "./layout/footer";
 
 @import "./pages/index";
+
+@import "./components/icons";
+@import "./components/buttons";
+@import "./components/working-item";
+@import "./components/restaurants_card";
+
+@import "./layout/footer";
+
+@import "./pages/menu-pages";
+@import "./components/menu-item";

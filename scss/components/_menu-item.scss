@@ -1,0 +1,22 @@
+.menu_item {
+    padding: 12px;
+    border-radius: 15px;
+    background-color: white;
+
+    h4 {
+        margin: 0;
+        font-size: 18px;
+    }
+
+    .menu_item--description {
+        display: flex;
+        align-items: baseline;
+        justify-content: space-between;
+        margin: 0;
+
+        p {
+            margin: 5px 0 0 0;
+            font-weight: 300;
+        }
+    }
+}

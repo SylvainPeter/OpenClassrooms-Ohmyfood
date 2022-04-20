@@ -1,0 +1,50 @@
+.menu_image {
+    position: absolute;
+    max-width: 100%;
+}
+
+.menu_container {
+    position: relative;
+    background-color: $background-lighter;
+    padding: 20px;
+    border-radius: 40px 40px 0 0;
+    top: 177px;
+}
+
+.menu_title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    h2 {
+        font-family: 'Shrikhand', cursive;
+        font-size: 28px;
+    }
+
+    .fa-heart {
+        font-size: 24px;
+        padding-right: 10px;
+    }
+}
+
+.starters,
+.main_dishes,
+.desserts {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+    h3 {
+        font-weight: 300;
+        font-size: 17px;
+
+        &:hover {
+            color: $primary-color;
+        }
+    }
+}
+
+.menu_footer {
+    position: relative;
+    bottom: -178px;
+}
