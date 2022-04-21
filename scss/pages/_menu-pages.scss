@@ -1,6 +1,11 @@
+.container {
+    margin-bottom: -50px;
+}
+
 .menu_image {
-    position: absolute;
-    max-width: 100%;
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
 }
 
 .menu_container {
@@ -8,7 +13,7 @@
     background-color: $background-lighter;
     padding: 20px;
     border-radius: 40px 40px 0 0;
-    top: 177px;
+    top: -50px;
 }
 
 .menu_title {
@@ -40,8 +45,13 @@
         border-bottom: 3px solid transparent;
         padding: 5px 10px 5px 10px;
 
-        &:hover {
-            border-bottom: 3px solid $tertiary-color;
+        &:after {
+            content: '';
+            position: absolute;
+            width: 36px;
+            height: 27px;
+            left: 30px;
+            border-bottom: solid 3px $tertiary-color;
         }
     }
 }
@@ -51,7 +61,6 @@
     margin-top: 20px;
 }
 
-.menu_footer {
-    position: relative;
-    bottom: -178px;
+.button_link {
+    margin: auto;
 }
