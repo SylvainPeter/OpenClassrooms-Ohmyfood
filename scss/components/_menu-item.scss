@@ -3,6 +3,10 @@
     border-radius: 15px;
     background-color: white;
 
+    &:hover {
+        opacity: 0.8;
+    }
+
     h4 {
         margin: 0;
         font-size: 17px;

@@ -101,7 +101,58 @@ header .fas {
   margin-bottom: 45px;
 }
 
+#working_section h2 {
+  margin-bottom: 0;
+}
+
+@media only screen and (min-width: 992px) {
+  #working_section h2 {
+    text-align: center;
+  }
+}
+
+#working_section #working_item--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+  #working_section #working_item--container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
+}
+
 #restaurants_section {
+  padding: 0 20px 60px 20px;
+  background-color: #f3f3f3;
+}
+
+#restaurants_section h2 {
+  padding: 45px 0 0 0;
+}
+
+@media only screen and (min-width: 992px) {
+  #restaurants_section h2 {
+    padding: 47px 0 30px 0;
+    text-align: center;
+  }
+}
+
+#restaurants_section #restaurants_section--container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -112,8 +163,18 @@ header .fas {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   gap: 20px;
-  padding: 0 20px 60px 20px;
-  background-color: #f3f3f3;
+}
+
+@media only screen and (min-width: 992px) {
+  #restaurants_section #restaurants_section--container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
 }
 
 button {
@@ -134,7 +195,7 @@ button {
 }
 
 button:hover {
-  background-image: linear-gradient(135deg, #ff50cf 0%, #7d34d5 100%);
+  background-image: linear-gradient(135deg, #ff65d4 0%, #8845d9 100%);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
@@ -149,6 +210,8 @@ button:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-preferred-size: 30%;
+      flex-basis: 30%;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -158,6 +221,14 @@ button:hover {
   -webkit-box-shadow: 2px 7px 21px -3px #c4c4c4;
           box-shadow: 2px 7px 21px -3px #c4c4c4;
   background-color: #f3f3f3;
+}
+
+@media only screen and (min-width: 992px) {
+  .working_item {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .working_item .working_item--number {
@@ -185,14 +256,18 @@ button:hover {
 
 .restaurant_card {
   position: relative;
-  -ms-flex-preferred-size: 30%;
-      flex-basis: 30%;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
   max-height: 100%;
   max-width: 100%;
   border-radius: 20px;
   background-color: white;
   -webkit-box-shadow: 7px 7px 13px #cecece;
           box-shadow: 7px 7px 13px #cecece;
+}
+
+.restaurant_card:hover {
+  opacity: 0.8;
 }
 
 .restaurant_card img {
@@ -204,6 +279,12 @@ button:hover {
      object-fit: cover;
 }
 
+@media only screen and (min-width: 768px) {
+  .restaurant_card img {
+    height: 200px;
+  }
+}
+
 .restaurant_card span {
   position: absolute;
   left: 66%;
@@ -213,6 +294,26 @@ button:hover {
   color: #278870;
   background-color: #99E2D0;
   border-radius: 3px;
+}
+
+@media only screen and (min-width: 768px) {
+  .restaurant_card span {
+    left: 86%;
+    bottom: 83%;
+  }
+}
+
+@media only screen and (min-width: 1020px) {
+  .restaurant_card span {
+    left: 70%;
+    bottom: 83%;
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .restaurant_card span {
+    left: 79%;
+  }
 }
 
 .restaurant_card p {
@@ -258,6 +359,12 @@ footer {
   padding: 20px 20px 40px 20px;
   background-color: #353535;
   color: white;
+}
+
+@media only screen and (min-width: 992px) {
+  footer {
+    text-align: center;
+  }
 }
 
 footer h2 {
@@ -357,6 +464,10 @@ footer a {
   padding: 12px;
   border-radius: 15px;
   background-color: white;
+}
+
+.menu_item:hover {
+  opacity: 0.8;
 }
 
 .menu_item h4 {

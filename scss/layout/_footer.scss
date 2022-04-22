@@ -6,6 +6,10 @@ footer {
     background-color: $background-color2;
     color: white;
 
+    @media only screen and (min-width: 992px) {
+        text-align: center;
+    }
+
     h2 {
         font-family: 'Shrikhand', cursive;
         font-size: 18px;

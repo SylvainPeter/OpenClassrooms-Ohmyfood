@@ -1,13 +1,18 @@
 .working_item {
     position: relative;
     display: flex;
+    flex-basis: 30%;
     align-items: center;
     padding: 5px;
     margin: 35px 5px -9px 10px;
     border-radius: 20px;
     box-shadow: 2px 7px 21px -3px #c4c4c4;
     background-color: $background-lighter;
-    
+
+    @media only screen and (min-width: 992px) {
+        justify-content: center;
+    }
+
     .working_item--number {
         position: absolute;
         background-color: $primary-color;
@@ -22,7 +27,7 @@
         font-size: 1.2rem;
         margin-left: 20px;
     }
- 
+
     &:hover .working_item--icon {
         color: $primary-color;
     }
