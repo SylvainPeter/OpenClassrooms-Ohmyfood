@@ -205,6 +205,12 @@ button:hover {
   padding: 16px 35px 16px 35px;
 }
 
+@media only screen and (min-width: 992px) {
+  #order_button {
+    margin: 60px 0 50px 0;
+  }
+}
+
 .working_item {
   position: relative;
   display: -webkit-box;
@@ -388,8 +394,21 @@ footer a {
      object-fit: cover;
 }
 
+@media only screen and (min-width: 992px) {
+  .menu_image {
+    height: 335px;
+  }
+}
+
 .menu_container {
   position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   background-color: #f3f3f3;
   padding: 20px;
   border-radius: 40px 40px 0 0;
@@ -413,9 +432,41 @@ footer a {
   font-size: 24px;
 }
 
+@media only screen and (min-width: 992px) {
+  .menu_title h2 {
+    margin: 30px auto 20px auto;
+    font-size: 30px;
+  }
+}
+
 .menu_title .fa-heart {
   font-size: 24px;
   padding-right: 10px;
+}
+
+.menu_sections--container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media only screen and (min-width: 992px) {
+  .menu_sections--container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    gap: 20px;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: baseline;
+        -ms-flex-align: baseline;
+            align-items: baseline;
+  }
 }
 
 .starters,
@@ -428,6 +479,8 @@ footer a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  -ms-flex-preferred-size: 33%;
+      flex-basis: 33%;
   gap: 15px;
 }
 

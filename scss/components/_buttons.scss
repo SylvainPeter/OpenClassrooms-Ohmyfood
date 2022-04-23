@@ -19,4 +19,8 @@ button:hover {
 #order_button {
     margin: 30px 0 50px 0;
     padding: 16px 35px 16px 35px;
+
+    @media only screen and (min-width: 992px) {
+        margin: 60px 0 50px 0;
+    }
 }
