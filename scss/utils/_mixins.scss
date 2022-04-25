@@ -17,3 +17,16 @@
         +'Please make sure it is defined in `$breakpoints` map.';
     }
 }
+
+
+@mixin heart_hover_fill {
+    .fas {
+        opacity: 0;
+        color: $secondary-color;
+        transition: opacity 100ms ease-in-out;
+    }
+
+    .fas:hover {
+        opacity: 1;
+    }
+}

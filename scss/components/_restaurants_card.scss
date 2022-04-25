@@ -6,9 +6,10 @@
     border-radius: 20px;
     background-color: white;
     box-shadow: 7px 7px 13px lighten($background-color2, 60);
+    transition: transform 280ms ease-in-out;
 
     &:hover {
-        opacity: 0.8;
+        transform: scale(1.03);
     }
 
     img {
@@ -23,7 +24,7 @@
         }
     }
 
-    span {
+    .new {
         position: absolute;
         left: 66%;
         bottom: 80%;
@@ -43,7 +44,7 @@
             bottom: 83%;
         }
 
-        @include responsive('xl') {
+        @include responsive('small') {
             left: 79%;
         }
     }
@@ -52,6 +53,8 @@
         margin: 3px 0px 0px 10px;
         font-size: 16px;
     }
+
+    @include heart_hover_fill;
 }
 
 .restaurant_card--description {
@@ -70,6 +73,5 @@
 
     i {
         padding: 0 20px 0 0;
-        font-size: 23px;
     }
 }

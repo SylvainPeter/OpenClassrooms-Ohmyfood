@@ -58,27 +58,33 @@
             <div id="restaurants_section--container">
                 <a href="page1.html" class="restaurant_card">
                     <img src="images/restaurants/jay-wennington-N_Y88TWmGwA-unsplash.jpg" alt="La palette du goût">
-                    <span>Nouveau</span>
+                    <span class="new">Nouveau</span>
                     <div class="restaurant_card--description">
                         <div>
                             <h3>La palette du goût</h3>
                             <p>Ménilmontant</p>
                         </div>
                         <div>
-                            <i class="far fa-heart"></i>
+                            <span class="far fa-stack fa-lg">
+                                <i class="far fa-heart fa-stack-1x"></i>
+                                <i class="fas fa-heart fa-stack-1x"></i>
+                            </span>
                         </div>
                     </div>
                 </a>
                 <a href="page2.html" class="restaurant_card">
                     <img src="images/restaurants/stil-u2Lp8tXIcjw-unsplash.jpg" alt="La note enchantée">
-                    <span>Nouveau</span>
+                    <span class="new">Nouveau</span>
                     <div class="restaurant_card--description">
                         <div>
                             <h3>La note enchantée</h3>
                             <p>Charonne</p>
                         </div>
                         <div>
-                            <i class="far fa-heart"></i>
+                            <span class="far fa-stack fa-lg">
+                                <i class="far fa-heart fa-stack-1x"></i>
+                                <i class="fas fa-heart fa-stack-1x"></i>
+                            </span>
                         </div>
                     </div>
                 </a>
@@ -90,7 +96,10 @@
                             <p>Cité Rouge</p>
                         </div>
                         <div>
-                            <i class="far fa-heart"></i>
+                            <span class="far fa-stack fa-lg">
+                                <i class="far fa-heart fa-stack-1x"></i>
+                                <i class="fas fa-heart fa-stack-1x"></i>
+                            </span>
                         </div>
                     </div>
                 </a>
@@ -103,7 +112,10 @@
                             <p>Folie-Méricourt</p>
                         </div>
                         <div>
-                            <i class="far fa-heart"></i>
+                            <span class="far fa-stack fa-lg">
+                                <i class="far fa-heart fa-stack-1x"></i>
+                                <i class="fas fa-heart fa-stack-1x"></i>
+                            </span>
                         </div>
                     </div>
                 </a>
@@ -113,10 +125,24 @@
     <!-- Footer-->
     <footer>
         <h2>ohmyfood</h2>
-        <a href="#"><i class="fas fa-utensils"></i>Proposer un restaurant</a>
-        <a href="#"><i class="fas fa-hands-helping"></i>Devenir partenaire</a>
-        <a href="#">Mentions légales</a>
-        <a href="#">Contact</a>
+        <div class="footer_container">
+            <div class="footer_column">
+                <a href="#">
+                    <p><i class="fas fa-utensils"></i>Proposer un restaurant</p>
+                </a>
+                <a href="#">
+                    <p><i class="fas fa-hands-helping"></i>Devenir partenaire</p>
+                </a>
+            </div>
+            <div class="footer_column">
+                <a href="#">
+                    <p>Mentions légales</p>
+                </a>
+                <a href="#">
+                    <p>Contact</p>
+                </a>
+            </div>
+        </div>
     </footer>
 </body>
 

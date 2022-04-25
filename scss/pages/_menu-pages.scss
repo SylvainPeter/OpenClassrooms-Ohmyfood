@@ -1,5 +1,7 @@
 .container {
     margin-bottom: -50px;
+
+    @include heart_hover_fill;
 }
 
 .menu_image {
@@ -38,7 +40,6 @@
     }
 
     .fa-heart {
-        font-size: 24px;
         padding-right: 10px;
     }
 }
@@ -47,7 +48,7 @@
     display: flex;
     flex-direction: column;
 
-    @include responsive('medium')  {
+    @include responsive('medium') {
         flex-direction: row;
         gap: 20px;
         justify-content: space-around;
