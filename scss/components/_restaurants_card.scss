@@ -18,7 +18,7 @@
         border-radius: 15px 15px 0px 0px;
         object-fit: cover;
 
-        @media only screen and (min-width: 768px) {
+        @include responsive('small') {
             height: 200px;
         }
     }
@@ -33,17 +33,17 @@
         background-color: $tertiary-color;
         border-radius: 3px;
 
-        @media only screen and (min-width: 768px) {
+        @include responsive('small') {
             left: 86%;
             bottom: 83%;
         }
 
-        @media only screen and (min-width: 1020px) {
+        @include responsive('large') {
             left: 70%;
             bottom: 83%;
         }
 
-        @media only screen and (min-width: 1440px) {
+        @include responsive('xl') {
             left: 79%;
         }
     }

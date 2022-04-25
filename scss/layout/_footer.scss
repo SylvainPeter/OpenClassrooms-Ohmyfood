@@ -6,7 +6,7 @@ footer {
     background-color: $background-color2;
     color: white;
 
-    @media only screen and (min-width: 992px) {
+    @include responsive('medium') {
         text-align: center;
     }
 

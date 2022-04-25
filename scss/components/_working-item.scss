@@ -9,7 +9,7 @@
     box-shadow: 2px 7px 21px -3px #c4c4c4;
     background-color: $background-lighter;
 
-    @media only screen and (min-width: 992px) {
+    @include responsive('medium') {
         justify-content: center;
     }
 

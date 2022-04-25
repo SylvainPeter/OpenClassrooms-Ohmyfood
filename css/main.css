@@ -105,7 +105,7 @@ header .fas {
   margin-bottom: 0;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   #working_section h2 {
     text-align: center;
   }
@@ -121,7 +121,7 @@ header .fas {
           flex-direction: column;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   #working_section #working_item--container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -145,7 +145,7 @@ header .fas {
   padding: 45px 0 0 0;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   #restaurants_section h2 {
     padding: 47px 0 30px 0;
     text-align: center;
@@ -165,7 +165,7 @@ header .fas {
   gap: 20px;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   #restaurants_section #restaurants_section--container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
@@ -205,7 +205,7 @@ button:hover {
   padding: 16px 35px 16px 35px;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   #order_button {
     margin: 60px 0 50px 0;
   }
@@ -229,7 +229,7 @@ button:hover {
   background-color: #f3f3f3;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .working_item {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -285,7 +285,7 @@ button:hover {
      object-fit: cover;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .restaurant_card img {
     height: 200px;
   }
@@ -302,21 +302,21 @@ button:hover {
   border-radius: 3px;
 }
 
-@media only screen and (min-width: 768px) {
+@media (min-width: 768px) {
   .restaurant_card span {
     left: 86%;
     bottom: 83%;
   }
 }
 
-@media only screen and (min-width: 1020px) {
+@media (min-width: 1020px) {
   .restaurant_card span {
     left: 70%;
     bottom: 83%;
   }
 }
 
-@media only screen and (min-width: 1440px) {
+@media (min-width: 1440px) {
   .restaurant_card span {
     left: 79%;
   }
@@ -367,7 +367,7 @@ footer {
   color: white;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   footer {
     text-align: center;
   }
@@ -394,7 +394,7 @@ footer a {
      object-fit: cover;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .menu_image {
     height: 335px;
   }
@@ -432,7 +432,7 @@ footer a {
   font-size: 24px;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .menu_title h2 {
     margin: 30px auto 20px auto;
     font-size: 30px;
@@ -454,7 +454,7 @@ footer a {
           flex-direction: column;
 }
 
-@media only screen and (min-width: 992px) {
+@media (min-width: 992px) {
   .menu_sections--container {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
