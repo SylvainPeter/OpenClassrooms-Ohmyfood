@@ -1,4 +1,9 @@
 .menu_item {
+    display: flex;
+    gap: 10px;
+    justify-content: space-between;
+    align-items: center;
+    align-content: space-around;
     padding: 12px;
     border-radius: 15px;
     background-color: white;
@@ -12,16 +17,9 @@
         font-size: 17px;
     }
 
-    .menu_item--description {
-        display: flex;
-        align-items: baseline;
-        justify-content: space-between;
-        margin: 0;
-
-        p {
+    .menu_item--description p {
             margin: 5px 0 0 0;
             font-size: 15px;
             font-weight: 300;
         }
-    }
 }
