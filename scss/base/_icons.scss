@@ -1,3 +1,18 @@
 .fas {
     margin: 0 10px 0 0;
 }
+
+.heart_fill {
+    color: black;
+
+}
+
+.heart_fill:hover {
+    display: inline-block;
+    font-weight: bold;
+    background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    opacity: 1;
+}
