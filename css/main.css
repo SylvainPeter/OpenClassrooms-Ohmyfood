@@ -282,9 +282,11 @@ button {
 }
 
 button:hover {
-  background-image: linear-gradient(135deg, #ff65d4 0%, #8845d9 100%);
+  background-image: linear-gradient(135deg, #ff88de 0%, #9b63df 100%);
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+  -webkit-box-shadow: 1px 7px 9px #323232;
+          box-shadow: 1px 7px 9px #323232;
 }
 
 #order_button {

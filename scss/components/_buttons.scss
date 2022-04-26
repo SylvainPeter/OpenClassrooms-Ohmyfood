@@ -12,8 +12,9 @@ button {
 }
 
 button:hover {
-    background-image: linear-gradient(135deg, darken($secondary-color, 4) 0%, darken($primary-color, 4) 100%);
+    background-image: linear-gradient(135deg, lighten($secondary-color, 3%) 0%, lighten($primary-color, 3%) 100%);
     transform: scale(1.05);
+    box-shadow: 1px 7px 9px darken($background-color2, 1%);
 }
 
 #order_button {
