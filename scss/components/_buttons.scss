@@ -13,7 +13,7 @@ button {
 
 button:hover {
     background-image: linear-gradient(135deg, lighten($secondary-color, 3%) 0%, lighten($primary-color, 3%) 100%);
-    transform: scale(1.05);
+    transform: scale(1.04);
     box-shadow: 1px 7px 9px darken($background-color2, 1%);
 }
 

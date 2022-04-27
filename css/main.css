@@ -21,13 +21,11 @@ a {
 }
 
 .heart_fill:hover {
-  display: inline-block;
   font-weight: bold;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
   color: transparent;
-  opacity: 1;
 }
 
 @-webkit-keyframes rotation {
@@ -283,8 +281,8 @@ button {
 
 button:hover {
   background-image: linear-gradient(135deg, #ff88de 0%, #9b63df 100%);
-  -webkit-transform: scale(1.05);
-          transform: scale(1.05);
+  -webkit-transform: scale(1.04);
+          transform: scale(1.04);
   -webkit-box-shadow: 1px 7px 9px #323232;
           box-shadow: 1px 7px 9px #323232;
 }
