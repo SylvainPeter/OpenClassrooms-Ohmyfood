@@ -15,11 +15,21 @@
     h4 {
         margin: 0;
         font-size: 17px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
-    .menu_item--description p {
+    .menu_item--description  {
+        width: 78%;
+    
+    p {
             margin: 5px 0 0 0;
             font-size: 15px;
             font-weight: 300;
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
         }
+    }
 }

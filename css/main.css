@@ -18,6 +18,8 @@ a {
 
 .heart_fill {
   color: black;
+  -webkit-transition: all 1s linear;
+  transition: all 1s linear;
 }
 
 .heart_fill:hover {
@@ -84,8 +86,8 @@ a {
   z-index: 2;
   background-color: white;
   pointer-events: none;
-  -webkit-animation: transparency 0.6s 0.6s forwards;
-          animation: transparency 0.6s 0.6s forwards;
+  -webkit-animation: transparency 1.5s forwards;
+          animation: transparency 1.5s forwards;
 }
 
 .loader {
@@ -630,6 +632,7 @@ footer h2 {
 .starters span,
 .main_dishes span,
 .desserts span {
+  position: relative;
   font-weight: 300;
   font-size: 16px;
   border-bottom: 3px solid transparent;
@@ -643,7 +646,7 @@ footer h2 {
   position: absolute;
   width: 36px;
   height: 27px;
-  left: 30px;
+  left: 10px;
   border-bottom: solid 3px #99E2D0;
 }
 
@@ -681,11 +684,21 @@ footer h2 {
 .menu_item h4 {
   margin: 0;
   font-size: 17px;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.menu_item .menu_item--description {
+  width: 78%;
 }
 
 .menu_item .menu_item--description p {
   margin: 5px 0 0 0;
   font-size: 15px;
   font-weight: 300;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 /*# sourceMappingURL=main.css.map */

@@ -65,6 +65,7 @@
     gap: 15px;
 
     span {
+        position: relative;
         font-weight: 300;
         font-size: 16px;
         border-bottom: 3px solid transparent;
@@ -75,7 +76,7 @@
             position: absolute;
             width: 36px;
             height: 27px;
-            left: 30px;
+            left: 10px;
             border-bottom: solid 3px $tertiary-color;
         }
     }
