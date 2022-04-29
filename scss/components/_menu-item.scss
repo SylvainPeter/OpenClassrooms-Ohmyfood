@@ -1,4 +1,5 @@
 .menu_item {
+    position: relative;
     display: flex;
     gap: 10px;
     justify-content: space-between;
@@ -7,10 +8,8 @@
     padding: 12px;
     border-radius: 15px;
     background-color: white;
-
-    &:hover {
-        opacity: 0.8;
-    }
+    overflow: hidden;
+    transition: padding-right 400ms ease-in-out;
 
     h4 {
         margin: 0;
@@ -20,16 +19,49 @@
         text-overflow: ellipsis;
     }
 
-    .menu_item--description  {
+    &:hover {
+        padding-right: 110px;
+
+        .check {
+            visibility: visible;
+            transform: translate(-70px);
+        }
+
+        .fa-check-circle {
+            transform: rotate(360deg);
+        }
+    }
+
+    .menu_item--description {
         width: 78%;
-    
-    p {
+
+        p {
             margin: 5px 0 0 0;
             font-size: 15px;
             font-weight: 300;
             white-space: nowrap;
             overflow: hidden;
             text-overflow: ellipsis;
+        }
+    }
+
+    .check {
+        position: absolute;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 50px;
+        height: 26px;
+        border-radius: 0 15px 15px 0;
+        padding: 20px 5px 20px 5px;
+        right: -70px;
+        background-color: $tertiary-color;
+        visibility: hidden;
+        transition: all 400ms ease-in-out;
+
+        .fa-check-circle {
+            color: white;
+            transition: transform 500ms ease-in-out;
         }
     }
 }

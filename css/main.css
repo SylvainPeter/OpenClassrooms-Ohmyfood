@@ -629,9 +629,9 @@ footer h2 {
   gap: 15px;
 }
 
-.starters span,
-.main_dishes span,
-.desserts span {
+.starters .underline,
+.main_dishes .underline,
+.desserts .underline {
   position: relative;
   font-weight: 300;
   font-size: 16px;
@@ -639,9 +639,9 @@ footer h2 {
   padding: 5px 10px 5px 10px;
 }
 
-.starters span:after,
-.main_dishes span:after,
-.desserts span:after {
+.starters .underline:after,
+.main_dishes .underline:after,
+.desserts .underline:after {
   content: '';
   position: absolute;
   width: 36px;
@@ -660,6 +660,7 @@ footer h2 {
 }
 
 .menu_item {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -675,10 +676,9 @@ footer h2 {
   padding: 12px;
   border-radius: 15px;
   background-color: white;
-}
-
-.menu_item:hover {
-  opacity: 0.8;
+  overflow: hidden;
+  -webkit-transition: padding-right 400ms ease-in-out;
+  transition: padding-right 400ms ease-in-out;
 }
 
 .menu_item h4 {
@@ -687,6 +687,21 @@ footer h2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.menu_item:hover {
+  padding-right: 110px;
+}
+
+.menu_item:hover .check {
+  visibility: visible;
+  -webkit-transform: translate(-70px);
+          transform: translate(-70px);
+}
+
+.menu_item:hover .fa-check-circle {
+  -webkit-transform: rotate(360deg);
+          transform: rotate(360deg);
 }
 
 .menu_item .menu_item--description {
@@ -700,5 +715,35 @@ footer h2 {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+}
+
+.menu_item .check {
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 50px;
+  height: 26px;
+  border-radius: 0 15px 15px 0;
+  padding: 20px 5px 20px 5px;
+  right: -70px;
+  background-color: #99E2D0;
+  visibility: hidden;
+  -webkit-transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in-out;
+}
+
+.menu_item .check .fa-check-circle {
+  color: white;
+  -webkit-transition: -webkit-transform 500ms ease-in-out;
+  transition: -webkit-transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out;
+  transition: transform 500ms ease-in-out, -webkit-transform 500ms ease-in-out;
 }
 /*# sourceMappingURL=main.css.map */
