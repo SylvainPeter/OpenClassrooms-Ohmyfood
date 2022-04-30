@@ -517,6 +517,34 @@ footer h2 {
   }
 }
 
+@-webkit-keyframes apparition {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
+@keyframes apparition {
+  from {
+    opacity: 0;
+    -webkit-transform: translate(0, 15px);
+            transform: translate(0, 15px);
+  }
+  to {
+    visibility: visible;
+    opacity: 1;
+    -webkit-transform: translate(0, 0px);
+            transform: translate(0, 0px);
+  }
+}
+
 .container {
   margin-bottom: -50px;
 }
@@ -616,6 +644,7 @@ footer h2 {
 .starters,
 .main_dishes,
 .desserts {
+  visibility: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -647,6 +676,21 @@ footer h2 {
   height: 27px;
   left: 10px;
   border-bottom: solid 3px #99E2D0;
+}
+
+.starters {
+  -webkit-animation: apparition 2s forwards;
+          animation: apparition 2s forwards;
+}
+
+.main_dishes {
+  -webkit-animation: apparition 2s 0.3s forwards;
+          animation: apparition 2s 0.3s forwards;
+}
+
+.desserts {
+  -webkit-animation: apparition 2s 0.5s forwards;
+          animation: apparition 2s 0.5s forwards;
 }
 
 .main_dishes,

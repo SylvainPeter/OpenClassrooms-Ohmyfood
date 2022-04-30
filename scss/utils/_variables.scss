@@ -6,7 +6,7 @@ $background-color1: #eaeaea;
 $background-lighter: lighten($background-color1, 3.4%);
 $background-color2: #353535;
 
-// Responsive Map
+// Responsive Breakpoints Map
 $breakpoints: (
     'small': (min-width: 768px),
     'medium': (min-width: 992px),
