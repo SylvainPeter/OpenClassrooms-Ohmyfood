@@ -17,17 +17,16 @@ a {
 }
 
 .heart_fill {
-  color: black;
-  -webkit-transition: all 1s linear;
-  transition: all 1s linear;
+  -webkit-transition: color 0.7s ease-out;
+  transition: color 0.7s ease-out;
 }
 
 .heart_fill:hover {
-  font-weight: bold;
+  color: transparent;
   background: linear-gradient(135deg, #FF79DA 0%, #9356DC 100%);
   background-clip: text;
   -webkit-background-clip: text;
-  color: transparent;
+  font-weight: bold;
 }
 
 @-webkit-keyframes rotation {
@@ -677,6 +676,7 @@ footer h2 {
   border-radius: 15px;
   background-color: white;
   overflow: hidden;
+  cursor: pointer;
   -webkit-transition: padding-right 400ms ease-in-out;
   transition: padding-right 400ms ease-in-out;
 }

@@ -3,14 +3,13 @@
 }
 
 .heart_fill {
-    color: black;
-    transition: all 1s linear;
+    transition: color 0.7s ease-out;
 }
 
 .heart_fill:hover {
-    font-weight: bold;
+    color: transparent;
     background: linear-gradient(135deg, $secondary-color 0%, $primary-color 100%);
     background-clip: text;
     -webkit-background-clip: text;
-    color: transparent;
+    font-weight: bold;
 }
