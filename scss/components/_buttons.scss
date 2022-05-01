@@ -18,10 +18,10 @@ button:hover {
 }
 
 #order_button {
-    margin: 40px 0 50px 0;
+    margin: 40px auto 50px auto;
     padding: 16px 35px 16px 35px;
 
     @include responsive('medium') {
-        margin: 60px 0 50px 0;
+        margin: 60px auto 50px auto;
     }
 }
