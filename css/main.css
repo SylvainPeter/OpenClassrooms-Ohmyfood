@@ -734,7 +734,6 @@ footer h2 {
 }
 
 .menu_item:hover .check {
-  visibility: visible;
   -webkit-transform: translate(-70px);
           transform: translate(-70px);
 }
@@ -772,9 +771,8 @@ footer h2 {
   height: 26px;
   border-radius: 0 15px 15px 0;
   padding: 20px 5px 20px 5px;
-  right: -70px;
   background-color: #99E2D0;
-  visibility: hidden;
+  right: -70px;
   -webkit-transition: all 400ms ease-in-out;
   transition: all 400ms ease-in-out;
 }

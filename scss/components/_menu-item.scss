@@ -24,7 +24,6 @@
         padding-right: 110px;
 
         .check {
-            visibility: visible;
             transform: translate(-70px);
         }
 
@@ -55,9 +54,8 @@
         height: 26px;
         border-radius: 0 15px 15px 0;
         padding: 20px 5px 20px 5px;
-        right: -70px;
         background-color: $tertiary-color;
-        visibility: hidden;
+        right: -70px;
         transition: all 400ms ease-in-out;
 
         .fa-check-circle {
