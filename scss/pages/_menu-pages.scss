@@ -97,19 +97,15 @@
     }
 }
 
-.starters {
-    animation: apparition 2s forwards;
-}
-
-.main_dishes {
-    animation: apparition 2s 0.3s forwards;
-}
-
-.desserts {
-    animation: apparition 2s 0.5s forwards;
-}
-
 .main_dishes,
 .desserts {
     margin-top: 20px;
 }
+
+$menus : ("starters", "main_dishes", "desserts");
+
+@for $i from 1 through length($menus) {
+    .#{nth($menus, $i)} {
+        animation: apparition 2s #{$i*200}ms forwards;
+    }
+  }
